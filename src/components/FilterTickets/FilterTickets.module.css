@@ -1,0 +1,59 @@
+.filter_container {
+  grid-area: filter;
+  font-size: 13px;
+  padding: 20px;
+  width: 232px;
+  height: 272px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.filter_header {
+  margin-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.filter_form {
+  font-weight: 400;
+  text-transform: none;
+  margin: 0 -20px;
+  user-select: none;
+}
+
+.label {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px 10px 50px;
+}
+
+.label:hover {
+  background: #ffffff;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.checker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+  background-image: url(../../img/checker-off.svg);
+}
+
+.input:checked + .checker {
+  background-image: url(../../img/checker-on.svg);
+}

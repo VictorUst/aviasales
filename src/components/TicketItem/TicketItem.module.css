@@ -1,0 +1,46 @@
+.ticket {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.ticket:last-child {
+  margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #2196f3;
+  font-size: 24px;
+  padding-top: 6px;
+}
+
+.logo {
+  width: 140px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
+
+.item:last-child {
+  width: 140px;
+}
+
+.top {
+  color: #a0b0b9;
+}

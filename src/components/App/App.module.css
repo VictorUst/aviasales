@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(/src/fonts/OpenSans-Regular.woff) format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrapper {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #F3F7FA;
+  color: #4a4a4a;
+  min-height: 100vh;
+  max-width: 754px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-areas:
+  "filter sorting"
+  "filter list";
+}
+
+.loading {
+  padding: 25px 0 25px 0;
+}

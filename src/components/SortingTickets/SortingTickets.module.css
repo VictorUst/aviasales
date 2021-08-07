@@ -1,0 +1,39 @@
+.sorting {
+  grid-area: sorting;
+  min-width: 502px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #fff;
+  border: 1px solid #dfe5ec;
+  line-height: 50px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.btn_clicked {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.btn:first-child {
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.btn:last-child {
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+}
