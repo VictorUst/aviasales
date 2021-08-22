@@ -33,7 +33,7 @@ export const completedLoading = () => ({
   type: COMPLETED_LOADING,
 });
 
-const getTicketsInLoop = async (searchId, cbDispatch, addIdFn) => {
+const getTicketsInLoop = () => async (searchId, cbDispatch, addIdFn) => {
   const response = await getTickets(searchId);
   const { tickets, stop } = response;
 

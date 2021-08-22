@@ -1,3 +1,6 @@
+const SEARCH_ID_URL = 'https://front-test.beta.aviasales.ru/search';
+const SEARCH_TICKETS_URL = 'https://front-test.beta.aviasales.ru/tickets?searchId=';
+
 async function request(url, options = {}, operations = 0) {
   let body;
   try {
@@ -19,6 +22,6 @@ async function request(url, options = {}, operations = 0) {
   return body;
 }
 
-export const getSearchId = () => request(`https://front-test.beta.aviasales.ru/search`);
+export const getSearchId = () => request(SEARCH_ID_URL);
 
-export const getTickets = (searchId) => request(`https://front-test.beta.aviasales.ru/tickets?searchId=${searchId}`);
+export const getTickets = (searchId) => request(`${SEARCH_TICKETS_URL}${searchId}`);

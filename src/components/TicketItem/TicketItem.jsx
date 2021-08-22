@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './TicketItem.module.css';
 import logo from '../../img/S7_Logo.svg';
-import { formatTime, formatArrivalTime, formatDuration, formatStops, formatStopsLabel } from './helpers';
+import { formatTime, formatArrivalTime, formatDuration, formatStops, formatStopsLabel } from './myComponent.utils';
 
 const TicketItem = ({ ticket }) => {
   const {

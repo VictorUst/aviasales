@@ -7,7 +7,9 @@ import FilterError from '../FilterError/FilterError';
 
 const TicketList = ({ tickets, filters, sorting }) => {
   const filterTickets = mappingTickets(filters, tickets, sorting);
-  const ticketsElements = filterTickets.map((ticket) => <TicketItem key={`${ticket.id}`} ticket={ticket} />);
+  const ticketsElements = filterTickets
+    .slice(0, 5)
+    .map((ticket) => <TicketItem key={`${ticket.id}`} ticket={ticket} />);
 
   const isFilterError = filters.reduce((acc, filter) => {
     const status = filter.filterId !== 'all' && filter.enabled ? 1 : 0;
