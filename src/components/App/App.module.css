@@ -12,13 +12,14 @@
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  background-color: #F3F7FA;
   color: #4a4a4a;
   min-height: 100vh;
-  max-width: 754px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
+  background-color: #F3F7FA;
 }
 
 .header {
@@ -36,4 +37,28 @@
 
 .loading {
   padding: 25px 0 25px 0;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .wrapper {
+    padding: 0;
+  }
+  .main {
+    grid-template-areas:
+    "filter"
+    "sorting"
+    "list";
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    padding: 0;
+  }
+  .main {
+    grid-template-areas:
+    "filter"
+    "sorting"
+    "list";
+  }
 }

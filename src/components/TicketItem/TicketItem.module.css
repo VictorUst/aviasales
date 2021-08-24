@@ -44,3 +44,15 @@
 .top {
   color: #a0b0b9;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .item:last-child {
+    width: 35%;
+  }
+}
+
+@media (max-width: 320px)  {
+  .item:last-child {
+    width: 35%;
+  }
+}

@@ -37,3 +37,28 @@
   border-left: 0;
   border-radius: 0 5px 5px 0;
 }
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .sorting {
+    margin-right: 20px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .sorting {
+    min-width: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .sorting {
+    min-width: 100%;
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+}

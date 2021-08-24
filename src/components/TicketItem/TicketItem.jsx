@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './TicketItem.module.css';
-import logo from '../../img/S7_Logo.svg';
 import { formatTime, formatArrivalTime, formatDuration, formatStops, formatStopsLabel } from './myComponent.utils';
 
 const TicketItem = ({ ticket }) => {
   const {
     price,
+    carrier,
     segments: [there, back],
   } = ticket;
 
@@ -15,7 +15,7 @@ const TicketItem = ({ ticket }) => {
       <header className={classes.header}>
         <div className={classes.price}>{price.toLocaleString('ru')} Р</div>
         <div className={classes.logo}>
-          <img src={logo} alt="Логотип Airlines" />
+          <img src={`http://pics.avs.io/99/36/${carrier}.png`} alt="Логотип авиакомпании" />
         </div>
       </header>
       <section className={classes.ticket_info}>
