@@ -5,7 +5,7 @@ import SortingTicketsContainer from '../SortingTickets/SortingTicketsContainer';
 import logo from '../../img/Logo.svg';
 import classes from './App.module.css';
 import TicketListContainer from '../TicketList/TicketListContainer';
-import addIdToTickets from '../../services/addIdToTickets';
+import addIdToTickets from './addIdToTickets.utils';
 import { getSearchId, getTickets } from '../../services/apiRequest';
 import { receiveSearchId, receiveTickets, throwError, completedLoading } from '../../actions/actions';
 import LoaderContainer from '../Loader/LoaderContainer';

@@ -1,4 +1,4 @@
-import addIdToTickets from '../services/addIdToTickets';
+import addIdToTickets from '../components/App/addIdToTickets.utils';
 import { getSearchId, getTickets } from '../services/apiRequest';
 
 export const SET_ACTIVE_FILTER = 'SET_ACTIVE_FILTER';

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './TicketItem.module.css';
-import { formatTime, formatArrivalTime, formatDuration, formatStops, formatStopsLabel } from './myComponent.utils';
+import { formatTime, formatArrivalTime, formatDuration, formatStops, formatStopsLabel } from './TicketItem.utils';
 
 const TicketItem = ({ ticket }) => {
   const {

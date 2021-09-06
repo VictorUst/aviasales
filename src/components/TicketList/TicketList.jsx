@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './TicketList.module.css';
 import TicketItem from '../TicketItem/TicketItem';
-import mappingTickets from '../../services/mappingTickets';
+import mappingTickets from './mappingTickets.utils';
 import FilterError from '../FilterError/FilterError';
 
 const TicketList = ({ tickets, filters, sorting }) => {

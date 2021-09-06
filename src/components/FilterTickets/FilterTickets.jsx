@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import classes from './FilterTickets.module.css';
 
 const FilterTickets = ({ filterTicketsReducer, onClick }) => {
@@ -8,7 +9,7 @@ const FilterTickets = ({ filterTicketsReducer, onClick }) => {
       <input
         id={filterId}
         value={filterId}
-        className={`${classes.input} ${classes.hidden}`}
+        className={classNames(classes.input, classes.hidden)}
         type="checkbox"
         checked={enabled}
         onChange={() => onClick(filterId)}
